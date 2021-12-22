@@ -1,0 +1,31 @@
+.card {
+  position: relative;
+}
+
+.card-media {
+  padding-top: 60%;
+  background-size: contain;
+}
+
+.card-media-head {
+  margin: 0 2em 0 0;
+  width: 100%;
+  top: 0;
+  position: absolute;
+  color: aliceblue;
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000;
+}
+
+.card-content {
+  text-decoration: none;
+}
+
+.card-description {
+  padding-left: 1em;
+}
+.card-actions {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

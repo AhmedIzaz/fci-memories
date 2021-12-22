@@ -1,0 +1,26 @@
+.form-wrapper {
+  margin-left: 1em;
+}
+.form {
+  margin: auto;
+  padding: 1em;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+.form-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.form-wrapper {
+  margin-top: 1em;
+}
+
+.fileInput {
+  margin: auto;
+}

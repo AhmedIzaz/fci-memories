@@ -1,0 +1,23 @@
+.wrapper {
+  margin: auto;
+  width: 80vw;
+}
+
+.post-details {
+  margin: auto;
+  width: 90%;
+}
+
+.details-header {
+  width: 60%;
+  margin: auto;
+}
+
+.details-image {
+  margin-top: 2em;
+  width: 100%;
+}
+
+.post-details-body {
+  min-height: 5em;
+}
