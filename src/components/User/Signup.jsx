@@ -148,4 +148,4 @@ function Signup() {
   );
 }
 
-export default React.memo(Signup);
+export default Signup;

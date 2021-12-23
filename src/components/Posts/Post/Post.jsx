@@ -67,4 +67,4 @@ function Post({ post }) {
   );
 }
 
-export default React.memo(Post);
+export default Post;

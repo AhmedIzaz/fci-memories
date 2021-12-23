@@ -20,4 +20,4 @@ function Posts() {
   );
 }
 
-export default React.memo(Posts);
+export default Posts;

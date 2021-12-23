@@ -1,5 +1,5 @@
 import axios from "axios";
-import React from "react";
+
 import useStateValue from "../StateProvider/StateProvider";
 import { useNavigate } from "react-router-dom";
 import { isExpired } from "react-jwt";
@@ -172,4 +172,4 @@ function useMethods() {
   };
 }
 
-export default React.memo(useMethods);
+export default useMethods;
