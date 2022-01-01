@@ -11,14 +11,12 @@ const Reducer = (state, action) => {
     case "ADD_TO_USER_LIST":
       return {
         ...state,
-        user_list: state.user_list.push(action.user),
+        user_list: action.user_list,
       };
     case "REMOVE_FROM_USER_LIST":
       return {
         ...state,
-        user_list: state.user_list.filter(
-          (item) => item._id !== action.user._id
-        ),
+        user_list: action.user_list,
       };
     case "ADD_POSTS":
       return {
