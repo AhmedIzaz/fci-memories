@@ -27,7 +27,7 @@ function App() {
     }
     getAllPosts();
   }, []);
-
+  console.log(state.user_list);
   return (
     <main>
       <Navigation />
