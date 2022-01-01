@@ -51,4 +51,4 @@ function PostDetails() {
   );
 }
 
-export default PostDetails;
+export default React.memo(PostDetails);
