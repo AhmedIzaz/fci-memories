@@ -136,9 +136,6 @@ function useMethods() {
         localStorage.setItem("user", JSON.stringify(response.data.user));
         dispatch({ type: "ADD_USER", user: response.data.user });
         dispatch({ type: "ADD_USER_TOKEN", token: response.data.token });
-        let user_list = state.user_list;
-        user_list.push(response.data.user);
-        dispatch({ type: "ADD_TO_USER_LIST", user_list: user_list });
         return navigate("/");
       })
       .catch((error) => console.log(error.message));
@@ -153,14 +150,9 @@ function useMethods() {
   // ===============================================
   // ===============================================
   const userLogout = () => {
-    let user_list = state.user_list.filter(
-      (user) => user._id != state.user._id
-    );
-    dispatch({ type: "REMOVE_FROM_USER_LIST", user_list: user_list });
     dispatch({ type: "REMOVE_USER" });
     dispatch({ type: "REMOVE_CURRENT_POST" });
     dispatch({ type: "REMOVE_USER_TOKEN" });
-
     localStorage.clear();
     return navigate("/");
   };
